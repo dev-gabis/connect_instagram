@@ -87,3 +87,15 @@ text-align: center;
     text-align: justify;
     line-height: 29px;
 }
+.list{
+    margin-top: -30px;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 29px;
+    color: #E2D5FF;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+background-color: black;
+border-radius: 50%;
+}
