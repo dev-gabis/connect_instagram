@@ -175,4 +175,7 @@ body {
     .options .link a {
         font-size: 14px;
     }
+    .carousel-item img{
+        object-fit: cover;
+    }
 }
