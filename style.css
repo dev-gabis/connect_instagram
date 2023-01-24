@@ -11,13 +11,20 @@ body {
     color: white;
 }
 
-.ask-info h2 {
-    font-weight: 400;
-    font-size: 32px;
+.offcanvas-body .offcanvas-heade{
+    flex-grow: 1;
+    padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+    overflow-y: auto;
 }
 
-.ask-info p {
-    font-size: 18px;
+.offcanvas-body{
+ --bs-offcanvas-padding-x: 3rem;
+}
+
+.offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+    --bs-offcanvas-width: 720px;
+    --bs-offcanvas-bg: #0A0A0A
+    ;
 }
 
 .title {
@@ -35,14 +42,6 @@ body {
     text-align: center;
 }
 
-.number-carousel {
-    color: #FFFFFF;
-    font-weight: 700;
-    background-color: #202020;
-    padding: 8px 13px;
-    border-radius: 50%;
-    text-align: center !important;
-}
 
 .options .link {
     font-weight: 500;
@@ -60,40 +59,11 @@ body {
     cursor: pointer;
 }
 
-.modal-content {
-    background-color: #282828;
-    padding: 30px;
-}
 
-.modal-dialog {
-    max-width: 700px !important;
-
-}
-
-.carousel-indicators [data-bs-target] {
-    display: none;
-}
-
-.content h1 {
+.offcanvas-title {
     font-size: 24px;
 }
 
-.content p {
-    font-size: 16px;
-    padding-bottom: 90px
-}
-
-.carousel-inner h5 {
-    font-size: 1.25rem;
-    position: fixed;
-    z-index: 1;
-    margin-top: -470px;
-    margin-left: -100px;
-    padding: 20px 0px;
-    font-size: 15px;
-    text-align: justify;
-    line-height: 21px;
-}
 
 .list {
     margin-top: -20px;
@@ -104,14 +74,32 @@ body {
 }
 
 .btn-close {
-    filter: contrast(0.0);
-    opacity: 10;
+    box-sizing: content-box;
+    width: 10px;
+    height: 20px;
+    background: url(assets/first-card/arrow.svg) center/1em auto no-repeat;
+    border: 0;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: black;
-    border-radius: 50%;
+ul li{
+    font-size: 20px;
+    margin-left: 45px;
+    margin-top: 10px;
+}
+
+.creators img {
+    width: 500px;
+    align-items: center;
+}
+
+button{
+    padding: 15px;
+    padding-left: 90px;
+    padding-right: 90px;
+    border-radius: 15px;
+    background-color: #7553E2;
+    color: #FFFFFF;
+    text-align: center;
 }
 
 @media screen and (min-width: 300px) and (max-width: 900px) {
