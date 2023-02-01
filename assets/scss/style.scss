@@ -1,0 +1,192 @@
+@import "variable";
+
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $background-color_1;
+	color: $color_1;
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.offcanvas {
+	--bs-offcanvas-width: 700px;
+	--bs-offcanvas-bg: #0A0A0A;
+
+	.offcanvas-header {
+		flex-grow: 1;
+		padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+		overflow-y: auto;
+
+		.btn-close {
+			display: flex;
+			width: max-content;
+			height: 0;
+			opacity: 10;
+			cursor: pointer;
+			background: transparent;
+			align-items: center;
+			text-decoration: none;
+			
+
+			&:hover{
+				color: #E2D5FF;
+				text-decoration: underline;
+			}
+		
+			p{
+				margin-bottom: 0;
+				font-size: 18px;
+				padding-left: 10px;
+				color: $color_1;
+			}
+		}
+	}
+
+	.offcanvas-body {
+		--bs-offcanvas-padding-x: 3rem;
+	}
+}
+
+.options {
+	.number {
+		color: $color_2;
+		font-weight: 700;
+		background-color: $background-color_2;
+		padding: 8px 15px;
+		border-radius: 50%;
+		text-align: center;
+	}
+
+	a {
+		font-weight: 500;
+		font-size: 16px;
+		color: $color_3;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+}
+
+
+.list {
+	margin-top: -20px;
+	font-size: 14px;
+	line-height: 16px;
+	margin-left: 29px;
+	color: $color_3;
+}
+
+ul {
+	li {
+		font-size: 16px;
+		margin-left: 45px;
+	}
+}
+
+.creators {
+	img {
+		width: 350px;
+		margin: 0 auto;
+		align-items: center;
+	}
+}
+
+button {
+	padding: 15px;
+	padding-left: 90px;
+	padding-right: 90px;
+	border-radius: 15px;
+	background-color: $background-color_3;
+	color: $color_2;
+	text-align: center;
+}
+
+.img-offcanvas {
+	width: 550px;
+	max-width: 100%;
+}
+
+@media screen and (max-width: 820px) {
+	body {
+		padding: 10px;
+	}
+
+	br {
+		display: none;
+	}
+
+	h3 {
+		font-size: 16px;
+	}
+
+	.creators {
+		img {
+			display: block;
+			margin: 0 auto;
+			object-fit: cover;
+			max-width: 100%;
+			margin-top: -40px;
+			margin-bottom: 30px;
+		}
+	}
+
+	.row {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.carousel-inner {
+		h5 {
+			margin-top: -225px;
+			padding: 0px 50px;
+			font-size: 14px;
+		}
+		.ms-5 {
+			display: none;
+		}
+	}
+
+	.ask-info {
+		h2 {
+			font-size: 27px;
+			margin-top: -25px;
+			margin-bottom: 20px;
+		}
+		p {
+			font-size: 17px;
+		}
+	}
+
+	.container {
+		.logo {
+			top: 12px;
+			position: absolute;
+		}
+	}
+
+	.last {
+		margin-bottom: 50px;
+	}
+
+	.options {
+		a {
+			font-size: 14px;
+		}
+	}
+
+	.carousel-item {
+		img {
+			object-fit: cover;
+		}
+	}
+}
